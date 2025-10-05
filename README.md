@@ -1,4 +1,4 @@
-# ZMK Corne Keyboard Configuration
+# ZMK Corne Hexfusion Configuration
 
 ZMK firmware configuration for the Corne (CRKBD) keyboard.
 
@@ -29,8 +29,6 @@ The mouse layer provides vim-style cursor control:
 
 ## Building
 
-This configuration requires ZMK with mouse support enabled (`CONFIG_ZMK_POINTING=y`).
-
 ### Generate Keymap Visualization
 
 To generate an updated keymap visualization:
@@ -40,7 +38,7 @@ To generate an updated keymap visualization:
 pipx install keymap-drawer
 
 # Generate visualization
-make keymap-draw
+make keymap
 ```
 
 This creates:
