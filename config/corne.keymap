@@ -89,13 +89,13 @@
 // |      |      |      |      |      |      |   |      |      |      |      |      |      |
 // |      |      |      |      |      |      |   |  H/← |  J/↓ |  K/↑ |  L/→ |      |      |
 // |      |      |      |      |      |      |   |      |      |      |      |      |      |
-//                    |      | TAB/LCLK |      |   | BSPC/RCLK |      |      |
+//                    |      |      | TAB/LCLK |   | BSPC/RCLK |      |      |
                         display-name = "Mouse";
                         bindings = <
    &trans &trans &trans &trans &trans &trans   &trans         &trans         &trans       &trans          &trans &trans
    &trans &trans &trans &trans &trans &trans   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans &trans
    &trans &trans &trans &trans &trans &trans   &trans         &trans         &trans       &trans          &trans &trans
-                        &trans &mkp LCLK &trans   &mkp RCLK &trans &trans
+                        &trans &trans &mkp LCLK   &mkp RCLK &trans &trans
                         >;
                 };
 

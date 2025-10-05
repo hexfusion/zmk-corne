@@ -167,8 +167,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp LCLK'
   - {t: ▽, type: trans}
+  - '&mkp LCLK'
   - '&mkp RCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
