@@ -1,6 +1,6 @@
 parse_config:
   raw_binding_map:
-    "&ht_esc_sys 4 ESC":
+    "&ht_esc_sys 3 ESC":
       tap: Esc
       hold: System
       type: held
