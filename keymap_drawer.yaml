@@ -1,0 +1,10 @@
+parse_config:
+  raw_binding_map:
+    "&ht_esc_sys 4 ESC":
+      tap: Esc
+      hold: System
+      type: held
+    "&td_clr_all":
+      tap: CLR ALL
+      hold: (2x tap)
+      type: held

@@ -1,6 +1,7 @@
 .PHONY: keymap keymap-parse clean help
 
 KEYMAP_FILE := config/corne.keymap
+KEYMAP_CONFIG := keymap_drawer.yaml
 YAML_OUTPUT := corne_keymap.yaml
 SVG_OUTPUT := corne_keymap.svg
 PNG_OUTPUT := corne_keymap.png
@@ -13,12 +14,12 @@ help:
 
 keymap-parse:
 	@echo "Parsing keymap to YAML..."
-	keymap parse -z $(KEYMAP_FILE) > $(YAML_OUTPUT)
+	keymap -c $(KEYMAP_CONFIG) parse -z $(KEYMAP_FILE) > $(YAML_OUTPUT)
 	@echo "Created $(YAML_OUTPUT)"
 
 keymap: keymap-parse
 	@echo "Drawing keymap SVG..."
-	keymap draw $(YAML_OUTPUT) > $(SVG_OUTPUT)
+	keymap -c $(KEYMAP_CONFIG) draw $(YAML_OUTPUT) > $(SVG_OUTPUT)
 	@echo "Created $(SVG_OUTPUT)"
 	@if command -v inkscape >/dev/null 2>&1; then \
 		echo "Converting SVG to PNG..."; \
