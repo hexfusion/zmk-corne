@@ -13,6 +13,7 @@ help:
 	@echo "  clean        - Remove generated files"
 
 keymap-parse:
+	@command -v keymap >/dev/null 2>&1 || { echo "Installing keymap-drawer..."; pipx install keymap-drawer; }
 	@echo "Parsing keymap to YAML..."
 	keymap -c $(KEYMAP_CONFIG) parse -z $(KEYMAP_FILE) > $(YAML_OUTPUT)
 	@echo "Created $(YAML_OUTPUT)"

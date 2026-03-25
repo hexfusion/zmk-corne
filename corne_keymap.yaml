@@ -68,7 +68,7 @@ layers:
   - '9'
   - '0'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -80,8 +80,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LGUI
   - LSHIFT
+  - ENTER
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
