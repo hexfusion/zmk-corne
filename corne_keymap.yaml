@@ -19,8 +19,8 @@ layers:
   - D
   - F
   - G
-  - H
-  - J
+  - {t: H, h: L Click, type: held}
+  - {t: J, h: R Click, type: held}
   - K
   - L
   - ;
@@ -35,7 +35,7 @@ layers:
   - M
   - ','
   - .
-  - '&td_slash'
+  - {t: /, h: \, type: held}
   - '-'
   - LSHIFT
   - ENTER
@@ -130,7 +130,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   System:
-  - '&bootloader'
+  - BOOT
   - ''
   - ''
   - ''
@@ -154,7 +154,7 @@ layers:
   - ''
   - ''
   - ''
-  - '&sys_reset'
+  - RESET
   - ''
   - ''
   - ''

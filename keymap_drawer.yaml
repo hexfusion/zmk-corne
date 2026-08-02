@@ -8,3 +8,17 @@ parse_config:
       tap: CLR ALL
       hold: (2x tap)
       type: held
+    "&mm LCLK H":
+      tap: H
+      hold: L Click
+      type: held
+    "&mm RCLK J":
+      tap: J
+      hold: R Click
+      type: held
+    "&td_slash":
+      tap: "/"
+      hold: "\\"
+      type: held
+    "&bootloader": BOOT
+    "&sys_reset": RESET
